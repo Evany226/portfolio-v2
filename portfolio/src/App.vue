@@ -37,6 +37,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
 #app {
   font-family: 'Montserrat', sans-serif;
@@ -56,7 +57,30 @@ html, body, *{
   --red: #D64848;
   --text: #000000;
   --text2: #ffffff;
-  --accent: #6A6868
+  --accent: #6A6868;
+
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+
+}
+
+h1{
+  font-size: var(--h1);
+}
+h2{
+  font-size: var(--h2);
+}
+h3{
+  font-size: var(--h3);
+}
+h4{
+  font-size: var(--h4);
+}
+h5{
+  font-size: var(--h5);
 }
 
 nav {
