@@ -2,10 +2,10 @@
   <div id="app">
     <nav class="nav">
       <div class="logo">Evan<span>Yang</span> </div>
-      <ul class="links">
+      <ul class="links" ref="close">
         <li><a href="#about"> About </a></li>
-        <li><a href="#about"> Skills </a></li>
-        <li><a href="#about"> Projects </a></li>
+        <li><a href="#skills"> Skills </a></li>
+        <li><a href="#projects"> Projects </a></li>
         <li><a href="#about" id="contact"> Contact </a></li>
       </ul>
 
@@ -14,22 +14,33 @@
       </a>
     </nav>
         <Intro/>
+        <About/>
   </div>
 </template>
 
 <script>
-import Intro from '@/components/Intro.vue'
+import SmoothScroll from 'smooth-scroll';
+import Intro from '@/components/Intro.vue';
+import About from '@/components/About.vue';
 
 export default {
   name: 'App',
   components: {
-    Intro
+    Intro,
+    About
+  },
+  created: function () {
+    this.scroll();
   },
   methods: {
     toggle() { 
-      const navLinks = document.querySelector(".links");
-      navLinks.classList.toggle("active");
+      this.$refs.close.classList.toggle("active");
     },
+    scroll() {
+      new SmoothScroll('.nav a[href*="#"]', {
+        speed: 600
+      })
+    }
 
   }
 }
@@ -62,7 +73,7 @@ html, body, *{
   --h1: 7.594rem;
   --h2: 5.063rem;
   --h3: 3.375rem;
-  --h4: 2.25rem;
+  --h4: 2.3rem;
   --h5: 1.5rem;
 
 }

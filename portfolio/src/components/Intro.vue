@@ -1,19 +1,19 @@
 <template>
-  <div class="flex-container">
+  <section class="flex-container">
       <div class="first-container">
         <h1 class="name">Evan Yang</h1>
-        <h3 class="school">Staten Island Technical Highscool</h3>
-        <h3 class="title">Student Web Developer</h3>
+          <h3 class="school">Staten Island Technical Highscool</h3>
+          <h4 class="title">Student Web Developer</h4>
+      </div>
 
-        <div class="bounce">
-          <i class="fas fa-chevron-down"></i>
-        </div>
-
+      <div class="bounce">
+        <i class="fas fa-chevron-down"></i>
       </div>
       
       <div class="second-container">
       </div>
-  </div>
+
+  </section>
 </template>
 
 <script>
@@ -35,7 +35,6 @@ export default {
 
 .first-container {
   width: 50%;
- height: 100%;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -45,7 +44,6 @@ export default {
 
 .second-container {
   width: 50%;
-  height: 100%;
   background-image: url("../assets/design2.jpg");
   background-size: cover;
 }
@@ -110,7 +108,6 @@ export default {
 }
 
 .fa-chevron-down:hover {
-  cursor: pointer;
   animation-name: bounce;
   -moz-animation-name: bounce;
 }
