@@ -2,10 +2,6 @@
   <section id="about" class="about-container">
       <div class="about-container-first">
             <img src="../assets/pfp.png" class="container-portrait">
-            <div class="about-container-icon">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github-square"></i>
-            </div>
       </div>
 
       <div class="about-container-second">
@@ -22,9 +18,14 @@
             <h4 class="work-title">Learn more about my work:</h4>
 
             <div class="work-container">
-                <button class="work-button">Skills</button>
-                <button class="work-button">Projects</button>
-                <button class="work-button">Hello</button>
+                <a class="work-button" v-smooth-scroll>Skills</a>
+                <a class="work-button" v-smooth-scroll>Projects</a>
+                <a class="work-button" v-smooth-scroll>Hello</a>
+            </div>
+
+            <div class="about-container-icon">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github-square"></i>
             </div>
 
       </div>
@@ -69,18 +70,16 @@ export default {
 
 .about-container-icon {
     display: flex;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .fa-linkedin {
     font-size: 5rem;
-    margin: 0rem 2rem;
 }
 
 .fa-github-square {
     font-size: 5rem;
-    margin: 0rem 2rem;
+    margin: 0rem 3rem;
 }
 
 .second-title-container {
@@ -106,7 +105,7 @@ export default {
 }
 
 .work-title {
-    margin-top: 15rem;
+    margin-top: 5rem;
     font-weight: 600;
     font-size: 2.8rem;
 }
@@ -139,6 +138,7 @@ export default {
     color: var(--text2);
     border-color: var(--text2);
     background-color: var(--nav);
+    cursor: pointer;
 }
 
 

@@ -3,10 +3,10 @@
     <nav class="nav">
       <div class="logo">Evan<span>Yang</span> </div>
       <ul class="links" ref="close">
-        <li><a href="#about"> About </a></li>
-        <li><a href="#skills"> Skills </a></li>
-        <li><a href="#projects"> Projects </a></li>
-        <li><a href="#about" id="contact"> Contact </a></li>
+        <li><a href="#about" v-smooth-scroll> About </a></li>
+        <li><a href="#skills" v-smooth-scroll> Skills </a></li>
+        <li><a href="#projects" v-smooth-scroll> Projects </a></li>
+        <li><a href="#about" id="contact" v-smooth-scroll> Contact </a></li>
       </ul>
 
       <a class="navbar-toggle" @click="toggle">
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import SmoothScroll from 'smooth-scroll';
 import Intro from '@/components/Intro.vue';
 import About from '@/components/About.vue';
 
@@ -29,18 +28,13 @@ export default {
     Intro,
     About
   },
-  created: function () {
+/*  created: function () {
     this.scroll();
-  },
+  }, */
   methods: {
     toggle() { 
       this.$refs.close.classList.toggle("active");
     },
-    scroll() {
-      new SmoothScroll('.nav a[href*="#"]', {
-        speed: 600
-      })
-    }
 
   }
 }
