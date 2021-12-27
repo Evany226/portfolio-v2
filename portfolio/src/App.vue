@@ -143,6 +143,11 @@ nav .links li {
   list-style: none;
 }
 
+nav .links a:hover {
+  color: var(--red);
+  transition: 0.3s;
+}
+
 nav .links a {
   display: block;
   font-size: 2rem;

@@ -27,7 +27,6 @@
                 <i class="fab fa-linkedin"></i>
                 <i class="fab fa-github-square"></i>
             </div>
-
       </div>
 
 
@@ -76,11 +75,23 @@ export default {
 
 .fa-linkedin {
     font-size: 5rem;
+    color: var(--text);
+}
+
+.fa-linkedin:hover {
+    color: var(--red);
+    transition: 0.3s;
 }
 
 .fa-github-square {
     font-size: 5rem;
     margin: 0rem 3rem;
+    color: var(--text);
+}
+
+.fa-github-square:hover {
+    color: var(--red);
+    transition: 0.3s;
 }
 
 .second-title-container {

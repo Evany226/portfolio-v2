@@ -100,7 +100,7 @@ export default {
 }
 
 .skills-image {
-    margin-top: 3rem;
+    margin-top: 7rem;
     width: 30%;
 }
 
@@ -114,7 +114,7 @@ export default {
     max-width: 80%;
     font-weight: 400;
     color: var(--text);
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 }
 
 
