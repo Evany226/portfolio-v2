@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about-container">
+  <section id="about" class="about-section">
       <div class="about-container-first">
             <img src="../assets/pfp.png" class="container-portrait">
       </div>
@@ -11,14 +11,14 @@
           </div>
 
             <div class="second-desc-container">
-                <h4 class="description">I’m a student at Staten Island Technical Highschool and I have  a passion for web development. I am interested in a career in the tech industry, related to web design or software development
+                <h4 class="description">I’m a student at Staten Island Technical Highschool and I have  a passion for web development. I am interested in a career in the tech industry, related to web design or software development.
                 </h4>
             </div>
 
             <h4 class="work-title">Learn more about my work:</h4>
 
             <div class="work-container">
-                <a class="work-button" v-smooth-scroll>Skills</a>
+                <a class="work-button" href="#skills" v-smooth-scroll>Skills</a>
                 <a class="work-button" v-smooth-scroll>Projects</a>
                 <a class="work-button" v-smooth-scroll>Hello</a>
             </div>
@@ -43,7 +43,8 @@ export default {
 </script>
 
 <style>
-.about-container{
+.about-section{
+    padding: 5rem 0rem;
     background-color: var(--light);
     display: flex;
 }

@@ -15,22 +15,23 @@
     </nav>
         <Intro/>
         <About/>
+        <Skills/>
   </div>
 </template>
 
 <script>
 import Intro from '@/components/Intro.vue';
 import About from '@/components/About.vue';
+import Skills from '@/components/Skills.vue';
 
 export default {
   name: 'App',
   components: {
     Intro,
-    About
+    About,
+    Skills
   },
-/*  created: function () {
-    this.scroll();
-  }, */
+
   methods: {
     toggle() { 
       this.$refs.close.classList.toggle("active");
