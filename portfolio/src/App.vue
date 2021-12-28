@@ -16,6 +16,7 @@
         <Intro/>
         <About/>
         <Skills/>
+        <Projects/>
   </div>
 </template>
 
@@ -23,13 +24,15 @@
 import Intro from '@/components/Intro.vue';
 import About from '@/components/About.vue';
 import Skills from '@/components/Skills.vue';
+import Projects from '@/components/Projects.vue';
 
 export default {
   name: 'App',
   components: {
     Intro,
     About,
-    Skills
+    Skills,
+    Projects
   },
 
   methods: {
@@ -159,6 +162,12 @@ nav .links a {
   color: var(--dark);
   background-color: var(--red);
   padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+#contact:hover {
+  color: white;
+  background-color: var(--nav);
 }
 
 @media screen and (max-width:768px) {

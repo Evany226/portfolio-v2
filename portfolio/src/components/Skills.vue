@@ -25,9 +25,11 @@
                     <h5 class="skills-container-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h5>
                 </div>
             </div>
-            <div id="right-arrow" class="arrow-container">
-                <i class="fas fa-chevron-down"></i>
+
+            <div class="arrow-container">
+                <i id="right-arrow" class="fas fa-chevron-down"></i>
             </div>
+
         </div>
     </section>
 </template>
@@ -88,6 +90,7 @@ export default {
     background-color: gray;
     width: 75%;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .skills-container-column {
@@ -101,7 +104,7 @@ export default {
 
 .skills-image {
     margin-top: 7rem;
-    width: 30%;
+    width: 35%;
 }
 
 .skills-container-subtitle {

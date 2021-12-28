@@ -19,13 +19,13 @@
 
             <div class="work-container">
                 <a class="work-button" href="#skills" v-smooth-scroll>Skills</a>
-                <a class="work-button" v-smooth-scroll>Projects</a>
-                <a class="work-button" v-smooth-scroll>Hello</a>
+                <a class="work-button" href="#projects" v-smooth-scroll>Projects</a>
+                <a class="work-button" id="resume" v-smooth-scroll>Resume</a>
             </div>
 
             <div class="about-container-icon">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github-square"></i>
+                <a href="https://www.linkedin.com/in/evan-yang-9bb856201/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Evany226" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
             </div>
       </div>
 
@@ -124,8 +124,15 @@ export default {
 
 .work-container {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 2rem;
     margin-bottom: 5rem;
+}
+
+#resume {
+    background-color: var(--dark);
+    color: var(--text2);
+    text-shadow: none;
 }
 
 .work-button {
