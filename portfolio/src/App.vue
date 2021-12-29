@@ -6,7 +6,7 @@
         <li><a href="#about" v-smooth-scroll> About </a></li>
         <li><a href="#skills" v-smooth-scroll> Skills </a></li>
         <li><a href="#projects" v-smooth-scroll> Projects </a></li>
-        <li><a href="#about" id="contact" v-smooth-scroll> Contact </a></li>
+        <li><a href="#contacts" id="contact" v-smooth-scroll> Contact </a></li>
       </ul>
 
       <a class="navbar-toggle" @click="toggle">
@@ -17,6 +17,8 @@
         <About/>
         <Skills/>
         <Projects/>
+        <Contacts/>
+        <Footer/>
   </div>
 </template>
 
@@ -25,6 +27,8 @@ import Intro from '@/components/Intro.vue';
 import About from '@/components/About.vue';
 import Skills from '@/components/Skills.vue';
 import Projects from '@/components/Projects.vue';
+import Contacts from '@/components/Contacts.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
@@ -32,7 +36,9 @@ export default {
     Intro,
     About,
     Skills,
-    Projects
+    Projects,
+    Contacts,
+    Footer
   },
 
   methods: {
@@ -60,7 +66,7 @@ html, body, *{
 }
 
 :root {
-  --nav: #363535;
+  --nav: #353434;
   --dark: #292929;
   --light: #F6F4F2;
   --red: #D64848;
@@ -162,12 +168,12 @@ nav .links a {
   color: var(--dark);
   background-color: var(--red);
   padding: 0.5rem 1rem;
-  border-radius: 0.3rem;
+  border-radius: 0.1rem;
 }
 
 #contact:hover {
   color: white;
-  background-color: var(--nav);
+  background-color: var(--dark);
 }
 
 @media screen and (max-width:768px) {

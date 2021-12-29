@@ -9,8 +9,9 @@
                     <h4 class="collection-title">GG.15</h4>
                     <h5 class="collection-subtitle">Displays league of legends account information</h5>
                 </div>
-                <img src="../assets/gg.png" alt="" class="collection-image">   
+                <img src="../assets/gg15.png" alt="" class="collection-image">   
             </a>
+
             <a class="collection-item">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 2</h4>
@@ -18,6 +19,7 @@
                 </div>
                 <img src="../assets/portfolio-pic-2.jpg" alt="" class="collection-image">
             </a>
+
             <a class="collection-item">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 3</h4>
@@ -25,6 +27,7 @@
                 </div>
                 <img src="../assets/portfolio-pic-3.jpg" alt="" class="collection-image">
             </a>
+
             <a class="collection-item">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 4</h4>
@@ -32,6 +35,7 @@
                 </div>
                 <img src="../assets/portfolio-pic-4.jpg" alt="" class="collection-image">
             </a>
+
             <a class="collection-item">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 5</h4>
@@ -39,12 +43,37 @@
                 </div>
                 <img src="../assets/portfolio-pic-5.jpg" alt="" class="collection-image">
             </a>
+
             <a class="collection-item">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 6</h4>
                     <h5 class="collection-subtitle">Description of Project 6</h5>
                 </div>
                 <img src="../assets/portfolio-pic-6.jpg" alt="" class="collection-image">
+            </a>
+
+            <a class="collection-item">
+                <div class="collection-content">
+                    <h4 class="collection-title">Project 7</h4>
+                    <h5 class="collection-subtitle">Description of Project 7</h5>
+                </div>
+                <img src="../assets/portfolio-pic-7.jpg" alt="" class="collection-image">
+            </a>
+
+            <a class="collection-item">
+                <div class="collection-content">
+                    <h4 class="collection-title">Project 8</h4>
+                    <h5 class="collection-subtitle">Description of Project 8</h5>
+                </div>
+                <img src="../assets/portfolio-pic-8.jpg" alt="" class="collection-image">
+            </a>
+
+            <a class="collection-item">
+                <div class="collection-content">
+                    <h4 class="collection-title">Project 9</h4>
+                    <h5 class="collection-subtitle">Description of Project 9</h5>
+                </div>
+                <img src="../assets/portfolio-pic-9.jpg" alt="" class="collection-image">
             </a>
       </div>
   </section>
