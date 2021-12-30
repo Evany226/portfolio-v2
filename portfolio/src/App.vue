@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <nav class="nav">
+    <nav class="nav" :class="{nav_transition: scrollPosition > 50}">
       <div class="logo">Evan<span>Yang</span> </div>
-      <ul class="links" ref="close">
+      <ul class="links" ref="close" >
         <li><a href="#about" v-smooth-scroll> About </a></li>
         <li><a href="#skills" v-smooth-scroll> Skills </a></li>
         <li><a href="#projects" v-smooth-scroll> Projects </a></li>
@@ -40,12 +40,21 @@ export default {
     Contacts,
     Footer
   },
-
+  data() {
+    return {
+      scrollPosition: null
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
+ },
   methods: {
     toggle() { 
       this.$refs.close.classList.toggle("active");
     },
-
+    updateScroll() {
+       this.scrollPosition = window.scrollY
+    },
   }
 }
 </script>
@@ -56,6 +65,12 @@ export default {
 
 #app {
   font-family: 'Montserrat', sans-serif;
+}
+
+.nav_transition {
+    background-color:var(--dark);
+    font-size: 2rem;
+    height: 5rem;
 }
 
 html, body, *{
@@ -105,8 +120,9 @@ nav {
   right: 0;
   top: 0;
   padding: 0 3%;
-  background-color: var(--dark);
-  height: 6rem;
+  background-color: var(--main);
+  height: 8rem;
+  transition: all 0.3s;
 }
 
 nav .logo {
@@ -159,7 +175,7 @@ nav .links a:hover {
 
 nav .links a {
   display: block;
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-decoration: none;
   color: var(--text2)
 }
@@ -173,7 +189,8 @@ nav .links a {
 
 #contact:hover {
   color: white;
-  background-color: var(--main);
+  background-color: var(--nav);
+  border: 0.1rem solid white;
 }
 
 @media screen and (max-width:768px) {
@@ -211,6 +228,14 @@ nav .links a {
 
   nav .links.active {
     bottom: 0rem;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    max-width: 100%;
   }
 }
 

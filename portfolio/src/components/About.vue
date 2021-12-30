@@ -1,17 +1,17 @@
 <template>
   <section id="about" class="about-section">
-      <div class="about-container-first">
+      <div class="about-container-first" data-aos="slide-right"  data-aos-duration="1000">
             <img src="../assets/pfp.png" class="container-portrait">
       </div>
 
-      <div class="about-container-second">
+      <div class="about-container-second" data-aos="slide-left"  data-aos-duration="1000">
           <div class="second-title-container">
               <h3 class="second-container-name">Evan Yang</h3>
               <h4 class="second-container-subtitle">SITHS 22 Student Web Developer</h4>
           </div>
 
-            <div class="second-desc-container">
-                <h4 class="description">I’m a student at Staten Island Technical Highschool and I have  a passion for web development. I am interested in a career in the tech industry, related to web design or software development.
+            <div class="second-desc-container" >
+                <h4 class="description" >I’m a student at Staten Island Technical Highschool and I have  a passion for computer science. I am interested in a career in the tech industry, related to web design or software development.
                 </h4>
             </div>
 
@@ -46,6 +46,7 @@ export default {
     padding: 5rem 0rem;
     background-color: var(--light);
     display: flex;
+       overflow: hidden;
 }
 
 .about-container-first {
@@ -53,7 +54,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:7rem;
+    padding-top: 7rem;
 }
 
 .about-container-second {

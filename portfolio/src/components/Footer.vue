@@ -29,17 +29,16 @@ name: "Footer",
 <style>
 .footer-section {
     background-color: var(--light);
-    height: 12vh;
     width: 100vw;
     display: flex;
-    align-items: center;
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 10vh;
+    align-items: center;
+    margin: 1rem;
 }
 
 .footer-col {
@@ -47,7 +46,7 @@ name: "Footer",
     justify-content: center;
     align-items: center;
     max-width: 33.33333333%;
-    margin: 3rem;
+    margin: 1rem 3rem;
 }
 
 .fa-twitter-square {

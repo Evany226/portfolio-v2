@@ -1,25 +1,25 @@
 <template>
     <section id="skills" class="skills-section">
-        <h3 class="skills-title">Skills</h3>
-        <h4 class="skills-desc">Below are some of my skills and areas of expertise</h4>
+        <h3 class="skills-title" data-aos="zoom-in-right" data-aos-duration="500">Skills</h3>
+        <h4 class="skills-desc" data-aos="fade-in" data-aos-duration="500">Below are some of my skills and areas of expertise</h4>
         <div class="skills-container">
             <div class="arrow-container">
                 <i id="left-arrow" class="fas fa-chevron-down"></i>
             </div>
             <div class="skills-container-row">
-                <div class="skills-container-column">
-                    <img class="skills-image" src="../assets/html icon.png">
+                <div class="skills-container-column" data-aos="flip-up" data-aos-duration="1000">
+                    <img class="skills-image" src="../assets/html icon.png" >
                     <h4 class="skills-container-subtitle">HTML + CSS + JS</h4>
                     <h5 class="skills-container-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h5>
                 </div>
 
-                <div class="skills-container-column">
+                <div class="skills-container-column" data-aos="flip-up" data-aos-duration="1000">
                     <img class="skills-image" src="../assets/vue icon.png">
                     <h4 class="skills-container-subtitle">Vue JS</h4>
                     <h5 class="skills-container-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h5>
                 </div>
 
-                <div class="skills-container-column">
+                <div class="skills-container-column" data-aos="flip-up" data-aos-duration="1000">
                     <img class="skills-image" src="../assets/mobile icon.png">
                     <h4 class="skills-container-subtitle">Mobile-friendly</h4>
                     <h5 class="skills-container-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h5>
@@ -87,7 +87,7 @@ export default {
 }
 
 .skills-container-row {
-    background-color: gray;
+    background-color: var(--light);
     width: 75%;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
