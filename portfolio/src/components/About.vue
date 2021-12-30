@@ -1,10 +1,10 @@
 <template>
   <section id="about" class="about-section">
-      <div class="about-container-first" data-aos="slide-right"  data-aos-duration="1000">
+      <div class="about-container-first" data-aos="slide-right"  data-aos-duration="1000" data-aos-once="true">
             <img src="../assets/pfp.png" class="container-portrait">
       </div>
 
-      <div class="about-container-second" data-aos="slide-left"  data-aos-duration="1000">
+      <div class="about-container-second" data-aos="slide-left"  data-aos-duration="1000" data-aos-once="true">
           <div class="second-title-container">
               <h3 class="second-container-name">Evan Yang</h3>
               <h4 class="second-container-subtitle">SITHS 22 Student Web Developer</h4>
