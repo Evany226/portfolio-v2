@@ -29,7 +29,7 @@ name: "Footer",
 <style>
 .footer-section {
     background-color: var(--light);
-    height: 15vh;
+    height: 12vh;
     width: 100vw;
     display: flex;
     align-items: center;

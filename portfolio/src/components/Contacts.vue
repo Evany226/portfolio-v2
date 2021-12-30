@@ -23,7 +23,6 @@ name: "Contacts",
 .contacts-section {
     width:100%;
     background-color: var(--dark);
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6) ), url("../assets/contact.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
