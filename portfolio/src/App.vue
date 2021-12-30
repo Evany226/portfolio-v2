@@ -67,13 +67,13 @@ html, body, *{
 
 :root {
   --nav: #353434;
+  --main: #1A1717;
   --dark: #292929;
   --light: #F6F4F2;
   --red: #D64848;
   --text: #000000;
   --text2: #ffffff;
   --accent: #6A6868;
-
   --h1: 7.594rem;
   --h2: 5.063rem;
   --h3: 3.375rem;
@@ -105,7 +105,7 @@ nav {
   right: 0;
   top: 0;
   padding: 0 3%;
-  background-color: var(--nav);
+  background-color: var(--dark);
   height: 6rem;
 }
 
@@ -173,7 +173,7 @@ nav .links a {
 
 #contact:hover {
   color: white;
-  background-color: var(--dark);
+  background-color: var(--main);
 }
 
 @media screen and (max-width:768px) {

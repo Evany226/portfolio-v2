@@ -43,7 +43,7 @@ export default {
 
 <style>
 .skills-section {
-    background-color: var(--dark);
+    background-color: var(--main);
     display: flex;
     flex-direction: column;
 }

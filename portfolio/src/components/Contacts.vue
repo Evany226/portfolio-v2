@@ -22,7 +22,7 @@ name: "Contacts",
 <style>
 .contacts-section {
     width:100%;
-    background-color: var(--dark);
+    background-color: var(--main);
     background-size: cover;
     background-position: center;
     text-align: center;
