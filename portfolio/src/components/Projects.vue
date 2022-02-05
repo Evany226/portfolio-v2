@@ -104,10 +104,11 @@ methods: {
       closeModal() {
         this.isModalVisible = false;
       },
+},
 components: {
     Modal,
 },
-}
+
 }
 </script>
 
