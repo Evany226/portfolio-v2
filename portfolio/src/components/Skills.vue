@@ -46,6 +46,7 @@ export default {
     background-color: var(--main);
     display: flex;
     flex-direction: column;
+    
 }
 
 .skills-title {

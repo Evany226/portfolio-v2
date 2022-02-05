@@ -80,6 +80,7 @@ export default {
   height: 100vh;
   background-color: var(--main);
   display: flex;
+
 }
 
 .first-container {

@@ -28,6 +28,7 @@ name: "Contacts",
     text-align: center;
     padding: 5rem 0rem;
     padding-bottom: 10rem;
+    
 }
 
 .contacts-title {

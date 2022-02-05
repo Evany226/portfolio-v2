@@ -3,7 +3,7 @@
       <h4 class="projects-subtitle" data-aos="fade-in" data-aos-duration="500" data-aos-delay="250" data-aos-once="true">PORTFOLIO</h4>
       <h3 class="projects-title" data-aos="fade-int" data-aos-duration="1000" data-aos-once="true">Personal Projects</h3>
 
-      <div class="collection" >
+      <div class="collection">
             <a class="collection-item" data-aos="slide-up" data-aos-duration="500" data-aos-once="true" @click="showModal">
                 <div class="collection-content">
                     <h4 class="collection-title">GG.15</h4>
@@ -12,7 +12,7 @@
                 <img src="../assets/gg15.png" alt="" class="collection-image">
             </a>
 
-            <a class="collection-item" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true">
+            <a class="collection-item" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true" @click="showModal">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 2</h4>
                     <h5 class="collection-subtitle">Description of Project 2</h5>
@@ -20,20 +20,20 @@
                 <img src="../assets/portfolio-pic-2.jpg" alt="" class="collection-image">
             </a>
 
-            <a class="collection-item" data-aos="slide-up" data-aos-duration="1500" data-aos-once="true">
+            <a class="collection-item" data-aos="slide-up" data-aos-duration="1500" data-aos-once="true" @click="showModal">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 3</h4>
                     <h5 class="collection-subtitle">Description of Project 3</h5>
                 </div>
-                <img src="../assets/portfolio-pic-3.jpg" alt="" class="collection-image" data-aos-once="true">
+                <img src="../assets/portfolio-pic-3.jpg" alt="" class="collection-image">
             </a>
 
-            <a class="collection-item" data-aos="slide-up" data-aos-duration="500" data-aos-once="true">
+            <a class="collection-item" data-aos="slide-up" data-aos-duration="500" data-aos-once="true" @click="showModal">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 4</h4>
                     <h5 class="collection-subtitle">Description of Project 4</h5>
                 </div>
-                <img src="../assets/portfolio-pic-4.jpg" alt="" class="collection-image" data-aos-once="true">
+                <img src="../assets/portfolio-pic-4.jpg" alt="" class="collection-image">
             </a>
 
             <a class="collection-item" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true"> 
@@ -75,16 +75,15 @@
                 </div>
                 <img src="../assets/portfolio-pic-9.jpg" alt="" class="collection-image">
             </a>
+      </div>     
 
             <Modal v-show="isModalVisible"
             @close="closeModal">
-            <template v-slot:header>
-                <h3>Project 1</h3>
-            </template>
+                <template v-slot:header>
+                    <h3>Project 1</h3>
+                </template>
             </Modal>
-      </div>
-  </section>
-  
+  </section> 
 </template>
 
 <script>
@@ -100,6 +99,7 @@ data() {
 methods: {
       showModal() {
         this.isModalVisible = true;
+        console.log(this.isModalVisible);
       },
       closeModal() {
         this.isModalVisible = false;
@@ -116,6 +116,7 @@ components: {
     background-color: var(--light);
     text-align: center;
     padding-bottom: 6rem;
+
 }
 
 .projects-title {

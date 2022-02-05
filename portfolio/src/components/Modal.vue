@@ -85,7 +85,7 @@
   }
 
   .modal-header {
-      font-size: 3rem;
+    font-size: 3rem;
     position: relative;
     color: var(--red);
     justify-content: space-between;
