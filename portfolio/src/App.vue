@@ -38,11 +38,11 @@ export default {
     Skills,
     Projects,
     Contacts,
-    Footer
+    Footer,
   },
   data() {
     return {
-      scrollPosition: null
+      scrollPosition: null,
     }
   },
   mounted() {
