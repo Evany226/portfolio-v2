@@ -12,7 +12,7 @@
                 <img src="../assets/gg15.png" alt="" class="collection-image">
             </a>
 
-            <a class="collection-item" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true" @click="showModal">
+            <a class="collection-item" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true" @click="showModal1">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 2</h4>
                     <h5 class="collection-subtitle">Description of Project 2</h5>
@@ -83,6 +83,12 @@
                     <h3>Project 1</h3>
                 </template>
             </Modal>
+            <Modal v-show="isModalVisible1"
+            @close="closeModal1">
+                <template v-slot:header>
+                    <h3>Project 2</h3>
+                </template>
+            </Modal>
   </section> 
 </template>
 
@@ -94,15 +100,21 @@ name: "Projects",
 data() {
     return {
         isModalVisible: false,
+        isModalVisible1: false,
     }
 },
 methods: {
       showModal() {
         this.isModalVisible = true;
-        console.log(this.isModalVisible);
       },
       closeModal() {
         this.isModalVisible = false;
+      },
+            showModal1() {
+        this.isModalVisible1 = true;
+      },
+      closeModal1() {
+        this.isModalVisible1 = false;
       },
 },
 components: {
