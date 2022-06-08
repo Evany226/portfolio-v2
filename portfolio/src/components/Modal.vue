@@ -9,7 +9,7 @@
 
         <header class="modal-header" id="modalTitle">
             <slot name="header">
-                <h3>Insert Project Name</h3>
+                <h3>{{projArr.projName}}</h3>
             </slot>
         </header>
         
@@ -52,6 +52,7 @@
         this.$emit('close');
       },
     },
+    props: ["projArr"],
   };
 </script>
 

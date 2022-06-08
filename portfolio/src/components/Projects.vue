@@ -4,15 +4,22 @@
       <h3 class="projects-title" data-aos="fade-int" data-aos-duration="1000" data-aos-once="true">Personal Projects</h3>
 
       <div class="collection">
-            <a class="collection-item" data-aos="slide-up" data-aos-duration="500" data-aos-once="true" @click="showModal">
+            <a class="collection-item" v-for="proj in projArr" :key="proj.projName" data-aos="slide-up" data-aos-duration="500" data-aos-once="true" @click="showModal(item)" >
                 <div class="collection-content">
-                    <h4 class="collection-title">GG.15</h4>
-                    <h5 class="collection-subtitle">Displays league of legends account information</h5>
+                    <h4 class="collection-title">{{proj.projName}}</h4>
+                    <h5 class="collection-subtitle">{{proj.projDesc}}</h5>
                 </div>
-                <img src="../assets/gg15.png" alt="" class="collection-image">
+                <img src="../assets/portfolio-pic-4.jpg" alt="" class="collection-image">
             </a>
 
-            <a class="collection-item" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true" @click="showModal1">
+            <Modal v-show="isModalVisible"
+            @close="closeModal" :projArr=projArr>
+                <template v-slot:header>
+                    <h3>Project 1</h3>
+                </template>
+            </Modal>
+
+<!--            <a class="collection-item" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true" @click="showModal1">
                 <div class="collection-content">
                     <h4 class="collection-title">Project 2</h4>
                     <h5 class="collection-subtitle">Description of Project 2</h5>
@@ -74,21 +81,8 @@
                     <h5 class="collection-subtitle">Description of Project 9</h5>
                 </div>
                 <img src="../assets/portfolio-pic-9.jpg" alt="" class="collection-image">
-            </a>
+            </a>    -->
       </div>     
-
-            <Modal v-show="isModalVisible"
-            @close="closeModal">
-                <template v-slot:header>
-                    <h3>Project 1</h3>
-                </template>
-            </Modal>
-            <Modal v-show="isModalVisible1"
-            @close="closeModal1">
-                <template v-slot:header>
-                    <h3>Project 2</h3>
-                </template>
-            </Modal>
   </section> 
 </template>
 
@@ -99,8 +93,47 @@ export default {
 name: "Projects",
 data() {
     return {
+        projArr: [
+            {
+                projName: "GG.15",
+                projDesc: "Displays league of legends account information",
+                projImg: "../assets/portfolio-pic-2.jpg",
+            },
+            {
+                projName: "Project 2",
+                projDesc: "Description of Project 2",
+                projImg: "../assets/portfolio-pic-2.jpg",
+            },
+            {
+                projName: "Project 3",
+                projDesc: "Description of Project 3",
+            },
+            {
+                projName: "Project 4",
+                projDesc: "Description of Project 4",
+            },
+            {
+                projName: "Project 5",
+                projDesc: "Description of Project 5",
+            },
+            {
+                projName: "Project 6",
+                projDesc: "Description of Project 6",
+            },
+            {
+                projName: "Project 7",
+                projDesc: "Description of Project 7",
+            },
+            {
+                projName: "Project 8",
+                projDesc: "Description of Project 8",
+            },
+            {
+                projName: "Project 9",
+                projDesc: "Description of Project 9",
+            },
+        ],
         isModalVisible: false,
-        isModalVisible1: false,
     }
 },
 methods: {
@@ -109,12 +142,6 @@ methods: {
       },
       closeModal() {
         this.isModalVisible = false;
-      },
-            showModal1() {
-        this.isModalVisible1 = true;
-      },
-      closeModal1() {
-        this.isModalVisible1 = false;
       },
 },
 components: {
