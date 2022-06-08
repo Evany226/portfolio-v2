@@ -1,10 +1,11 @@
 <template>
     <transition name="modal-fade">
-    <div class="modal-backdrop">
+    <div class="modal-backdrop" @click=close>
         <div class="modal"
             role="dialog"
             aria-labelledby="modalTitle"
-            aria-describedby="modalDescription">
+            aria-describedby="modalDescription"
+            @click.stop="">
 
         <header class="modal-header" id="modalTitle">
             <slot name="header">

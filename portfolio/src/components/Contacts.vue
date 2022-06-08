@@ -1,7 +1,6 @@
 <template>
 <section id="contacts" class="contacts-section">
     <h3 class="contacts-title">Contact Me</h3>
-    <h4 class="contacts-subtitle">(This form is not functional yet)</h4>
     <div class="contact-form">
         <form class="form" >
             <input required name="name"  placeholder="Name" type="text" autocomplete="off">
