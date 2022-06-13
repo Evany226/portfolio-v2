@@ -9,14 +9,14 @@
 
         <header class="modal-header" id="modalTitle">
             <slot name="header">
-                <h3>{{projArr.projName}}</h3>
+                <h3>{{data.projName}}</h3>
             </slot>
         </header>
         
 
         <div class="modal-image">
             <slot name="image">
-                <img src="../assets/gg15.png" id="modal-img">
+                <img :src="data.projImg" id="modal-img">
             </slot>
         </div>
 
@@ -25,19 +25,6 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </slot>
         </section>
-
-        <footer class="modal-footer">
-            <slot name="footer">
-            </slot>
-            <button
-            type="button"
-            class="btn-green"
-            @click="close"
-            aria-label="Close modal"
-          >
-            Close Modal
-          </button>
-        </footer>
         
         </div>
     </div>
@@ -52,7 +39,7 @@
         this.$emit('close');
       },
     },
-    props: ["projArr"],
+    props: ["data"],
   };
 </script>
 
@@ -67,6 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
   }
 
   .modal {
@@ -107,6 +95,7 @@
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
+    padding-bottom: 7rem;
   }
 
   #modal-img {
@@ -117,28 +106,6 @@
       padding: 3rem;
       display: flex;
       justify-content: center;
-  }
-
-  .btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--red);
-    background: transparent;
-  }
-
-  .btn-green {
-    color: white;
-    background: var(--red);
-    border: 1px solid var(--red);
-    border-radius: 0.25rem;
-    font-size: 2rem;
-    padding: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
   }
 
     .modal-fade-enter,

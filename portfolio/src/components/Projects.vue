@@ -4,20 +4,19 @@
       <h3 class="projects-title" data-aos="fade-int" data-aos-duration="1000" data-aos-once="true">Personal Projects</h3>
 
       <div class="collection">
-            <a class="collection-item" v-for="proj in projArr" :key="proj.projName" data-aos="slide-up" data-aos-duration="500" data-aos-once="true" @click="showModal(item)" >
+            <Modal v-show="isModalVisible"
+            @close="closeModal" :data="modalData">
+                <template v-slot:header>
+                </template>
+            </Modal>
+            <a class="collection-item" v-for="proj in projArr" :key="proj.projName" data-aos="slide-up" data-aos-duration="500" data-aos-once="true" @click="showModal(proj)" >
                 <div class="collection-content">
                     <h4 class="collection-title">{{proj.projName}}</h4>
                     <h5 class="collection-subtitle">{{proj.projDesc}}</h5>
                 </div>
-                <img src="../assets/portfolio-pic-4.jpg" alt="" class="collection-image">
+                <img :src="proj.projImg" alt="" class="collection-image">
             </a>
 
-            <Modal v-show="isModalVisible"
-            @close="closeModal" :projArr=projArr>
-                <template v-slot:header>
-                    <h3>Project 1</h3>
-                </template>
-            </Modal>
 
 <!--            <a class="collection-item" data-aos="slide-up" data-aos-duration="1000" data-aos-once="true" @click="showModal1">
                 <div class="collection-content">
@@ -102,43 +101,52 @@ data() {
             {
                 projName: "Project 2",
                 projDesc: "Description of Project 2",
-                projImg: "../assets/portfolio-pic-2.jpg",
+                projImg: "https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
             },
             {
                 projName: "Project 3",
                 projDesc: "Description of Project 3",
+                projImg: "https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80",
             },
             {
                 projName: "Project 4",
                 projDesc: "Description of Project 4",
+                projImg: "https://images.unsplash.com/photo-1491466424936-e304919aada7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
             },
             {
                 projName: "Project 5",
                 projDesc: "Description of Project 5",
+                projImg: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
             },
             {
                 projName: "Project 6",
                 projDesc: "Description of Project 6",
+                projImg: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
             },
             {
                 projName: "Project 7",
                 projDesc: "Description of Project 7",
+                projImg: "https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
             },
             {
                 projName: "Project 8",
                 projDesc: "Description of Project 8",
+                projImg: "https://images.unsplash.com/photo-1493514789931-586cb221d7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
             },
             {
                 projName: "Project 9",
                 projDesc: "Description of Project 9",
+                projImg: "https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
             },
         ],
         isModalVisible: false,
+        modalData: null,
     }
 },
 methods: {
-      showModal() {
-        this.isModalVisible = true;
+      showModal(data) {
+        this.isModalVisible = true; 
+        this.modalData = data;
       },
       closeModal() {
         this.isModalVisible = false;
