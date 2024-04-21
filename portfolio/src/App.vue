@@ -71,7 +71,8 @@ export default {
 .nav_transition {
     background-color:var(--dark);
     font-size: 2rem;
-    height: 5rem;
+    height: 7rem;
+
 }
 
 html, body, *{
@@ -182,15 +183,15 @@ nav .links a {
 }
 
 #contact {
-  color: var(--dark);
+  color: var(--main);
   background-color: var(--red);
   padding: 0.5rem 1rem;
-  border-radius: 0.1rem;
+  border-radius: 0.5rem;
 }
 
 #contact:hover {
   color: white;
-  background-color: var(--nav);
+  background-color: var(--main);
   border: 0.1rem solid white;
 }
 

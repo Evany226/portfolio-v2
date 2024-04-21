@@ -34,8 +34,8 @@
 
       </div >
       
-          <h3 class="school">Staten Island Technical Highscool</h3>
-          <h4 class="title">Student Web Developer</h4>
+          <h3 class="school">Stevens Institute of Technology</h3>
+          <h4 class="title">Computer Science</h4>
       </div>
 
       <div class="bounce">

@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="about-section">
       <div class="about-container-first" data-aos="slide-right"  data-aos-duration="1000" data-aos-once="true">
-            <img src="../assets/pfp.png" class="container-portrait">
+            <img src="../assets/newpic.jpg" class="container-portrait">
       </div>
 
       <div class="about-container-second" data-aos="slide-left"  data-aos-duration="1000" data-aos-once="true">
@@ -11,7 +11,7 @@
           </div>
 
             <div class="second-desc-container" >
-                <h4 class="description" >I’m a student at Staten Island Technical Highschool and I have  a passion for computer science. I am interested in a career in the tech industry, related to web design or software development.
+                <h4 class="description" >Hey, I'm Evan. I'm currently a sophomore studying Computer Science at Stevens Institute of Technology. I'm interested in a career in the tech industry, related to web or software development. My main hobbies are video games, basketball and rock climbing.
                 </h4>
             </div>
 
@@ -24,7 +24,7 @@
             </div>
 
             <div class="about-container-icon">
-                <a href="https://www.linkedin.com/in/evan-yang-9bb856201/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/eyang26/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/Evany226" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
             </div>
       </div>
@@ -43,10 +43,11 @@ export default {
 
 <style>
 .about-section{
-    padding: 5rem 0rem;
+    padding: 8rem 0rem;
     background-color: var(--light);
     display: flex;
-       overflow: hidden;
+    overflow: hidden;
+
 }
 
 .about-container-first {
@@ -54,19 +55,19 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 7rem;
 }
 
 .about-container-second {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .container-portrait {
-    width: 20vw;
-    border-radius: 2rem;
-    border: solid 0.3rem var(--nav);
+    width: 50%;
+    border-radius: 0.5rem;
+
 }
 
 .about-container-icon {
@@ -81,7 +82,7 @@ export default {
 
 .fa-linkedin:hover {
     color: var(--red);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .fa-github-square {
@@ -92,7 +93,7 @@ export default {
 
 .fa-github-square:hover {
     color: var(--red);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .second-title-container {
@@ -102,7 +103,7 @@ export default {
 
 .second-container-name {
     color: var(--text);
-    margin-top: 7rem;
+    margin-top: 0rem;
 }
 
 .second-container-subtitle{
@@ -112,15 +113,17 @@ export default {
 
 
 .description {
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 5rem;
     max-width: 90%;
+    font-size: 2rem;
+
 }
 
 .work-title {
     margin-top: 5rem;
     font-weight: 600;
-    font-size: 2.8rem;
+    font-size: 2rem;
 }
 
 .work-container {
@@ -138,7 +141,7 @@ export default {
 
 .work-button {
     display:inline-block;
-    padding: 0.8rem 2.5rem;
+    padding: 0.6rem 2rem;
     border:0.1em solid #000000;
     margin-right: 2.5rem;
     border-radius: 0.1rem;
@@ -150,7 +153,8 @@ export default {
     background-color:#FFFFFF;
     text-align:center;
     transition: all 0.15s;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    border-radius: 0.5rem;
 }
 
 .work-button:hover{
