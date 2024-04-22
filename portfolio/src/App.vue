@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <nav class="nav" :class="{nav_transition: scrollPosition > 50}">
-      <div class="logo">Evan<span>Yang</span> </div>
-      <ul class="links" ref="close" >
+    <nav class="nav" :class="{ nav_transition: scrollPosition > 50 }">
+      <div class="logo">Evan<span>Yang</span></div>
+      <ul class="links" ref="close">
         <li><a href="#about" v-smooth-scroll> About </a></li>
         <li><a href="#skills" v-smooth-scroll> Skills </a></li>
         <li><a href="#projects" v-smooth-scroll> Projects </a></li>
@@ -13,25 +13,25 @@
         <i class="fas fa-bars"></i>
       </a>
     </nav>
-        <Intro/>
-        <About/>
-        <Skills/>
-        <Projects/>
-        <Contacts/>
-        <Footer/>
+    <Intro />
+    <About />
+    <Skills />
+    <Projects />
+    <Contacts />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Intro from '@/components/Intro.vue';
-import About from '@/components/About.vue';
-import Skills from '@/components/Skills.vue';
-import Projects from '@/components/Projects.vue';
-import Contacts from '@/components/Contacts.vue';
-import Footer from '@/components/Footer.vue';
+import Intro from "@/components/Intro.vue";
+import About from "@/components/About.vue";
+import Skills from "@/components/Skills.vue";
+import Projects from "@/components/Projects.vue";
+import Contacts from "@/components/Contacts.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Intro,
     About,
@@ -43,75 +43,76 @@ export default {
   data() {
     return {
       scrollPosition: null,
-    }
+    };
   },
   mounted() {
-    window.addEventListener('scroll', this.updateScroll);
- },
+    window.addEventListener("scroll", this.updateScroll);
+  },
   methods: {
-    toggle() { 
+    toggle() {
       this.$refs.close.classList.toggle("active");
     },
     updateScroll() {
-       this.scrollPosition = window.scrollY
+      this.scrollPosition = window.scrollY;
     },
-  }
-}
+  },
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 
 #app {
-  font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
 }
 
 .nav_transition {
-    background-color:var(--dark);
-    font-size: 2rem;
-    height: 7rem;
-
+  background-color: var(--dark);
+  font-size: 2rem;
+  height: 7rem;
 }
 
-html, body, *{
+html,
+body,
+* {
   font-size: 62.5%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
   --nav: #353434;
-  --main: #1A1717;
+  --main: #1a1717;
   --dark: #292929;
-  --light: #F6F4F2;
-  --red: #D64848;
+  --light: #f6f4f2;
+  --red: #d64848;
   --text: #000000;
   --text2: #ffffff;
-  --accent: #6A6868;
+  --accent: #6a6868;
   --h1: 7.594rem;
   --h2: 5.063rem;
   --h3: 3.375rem;
   --h4: 2.3rem;
   --h5: 1.5rem;
-
 }
 
-h1{
+h1 {
   font-size: var(--h1);
 }
-h2{
+h2 {
   font-size: var(--h2);
 }
-h3{
+h3 {
   font-size: var(--h3);
 }
-h4{
+h4 {
   font-size: var(--h4);
 }
-h5{
+h5 {
   font-size: var(--h5);
 }
 
@@ -179,7 +180,7 @@ nav .links a {
   display: block;
   font-size: 1.75rem;
   text-decoration: none;
-  color: var(--text2)
+  color: var(--text2);
 }
 
 #contact {
@@ -195,7 +196,7 @@ nav .links a {
   border: 0.1rem solid white;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   nav .logo {
     float: none;
     width: auto;
@@ -207,7 +208,7 @@ nav .links a {
     position: fixed;
     width: 60%;
     z-index: 9;
-    background-color: rgba(0, 0, 0,.8);
+    background-color: rgba(0, 0, 0, 0.8);
     left: 0;
     right: 0;
     bottom: 100%;
@@ -231,7 +232,7 @@ nav .links a {
   nav .links.active {
     bottom: 0rem;
   }
-  
+
   .footer-container {
     flex-direction: column;
   }
@@ -240,7 +241,4 @@ nav .links a {
     max-width: 100%;
   }
 }
-
 </style>
-
-
