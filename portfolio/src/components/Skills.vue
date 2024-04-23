@@ -209,7 +209,7 @@ export default {
   background-color: var(--main);
   display: flex;
   flex-direction: column;
-  padding: 8rem 0rem;
+  padding: 6.5rem 0rem;
 }
 
 .skills-title {
@@ -250,7 +250,7 @@ export default {
 }
 
 .skills-container-row {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
