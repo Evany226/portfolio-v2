@@ -40,15 +40,15 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Demo <i class="fa fa-link" aria-hidden="true"></i>
+              View Demo
             </a>
             <a
               class="view-button"
               href="https://github.com/Evany226/Drag-and-Drop-v2"
               target="_blank"
               rel="noopener noreferrer"
-              >View on Github <i class="fa fa-github" aria-hidden="true"></i
-            ></a>
+              >View on Github</a
+            >
           </div>
         </div>
         <img src="../assets/proj1.jpg" alt="" class="collection-image" />
@@ -82,8 +82,8 @@
               href="https://github.com/ZhangTerrence/qxchange"
               target="_blank"
               rel="noopener noreferrer"
-              >View on Github <i class="fa fa-github" aria-hidden="true"></i
-            ></a>
+              >View on Github
+            </a>
           </div>
         </div>
         <img src="../assets/qxchange.jpg" alt="" class="collection-image" />
@@ -97,14 +97,23 @@
         @click="showModal"
       >
         <div class="collection-content">
-          <h4 class="collection-title">Project 3</h4>
-          <h5 class="collection-subtitle">Description of Project 3</h5>
+          <h4 class="collection-title">Kairos</h4>
+          <h5 class="collection-subtitle">
+            A forums app created for a 24 hr hackathon to help students with
+            homework. Created using the MERN Stack (MongoDB, Express.js, React,
+            Node.js)
+          </h5>
+          <div class="view-button-wrapper">
+            <a
+              class="view-button"
+              href="https://github.com/ZhangTerrence/qxchange"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on Github
+            </a>
+          </div>
         </div>
-        <img
-          src="../assets/portfolio-pic-3.jpg"
-          alt=""
-          class="collection-image"
-        />
+        <img src="../assets/kairos.jpg" alt="" class="collection-image" />
       </a>
 
       <a
@@ -315,7 +324,8 @@ a {
 }
 
 .collection-item {
-  width: 30vw;
+  width: 30%;
+  height: 30rem;
   margin: 2rem;
   position: relative;
   transition: all 0.3s;
