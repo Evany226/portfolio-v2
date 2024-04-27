@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <nav class="nav" :class="{ nav_transition: scrollPosition > 50 }">
-      <div class="logo">Evan<span>Yang</span></div>
       <ul class="links" ref="close">
         <li><a href="#about" v-smooth-scroll> About </a></li>
         <li><a href="#skills" v-smooth-scroll> Skills </a></li>

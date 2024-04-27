@@ -30,7 +30,7 @@
           <h4 class="collection-title">DragNDrop</h4>
           <h5 class="collection-subtitle">
             A project management application to help organize your workflow and
-            track tasks. Created using React, Express, Node.js, Sequelize and
+            track tasks. Created using React, Express.js, Node.js, Sequelize and
             PostgreSQL
           </h5>
           <div class="view-button-wrapper">
@@ -40,15 +40,15 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Demo
+              View Demo <i class="fa fa-link" aria-hidden="true"></i>
             </a>
             <a
               class="view-button"
               href="https://github.com/Evany226/Drag-and-Drop-v2"
               target="_blank"
               rel="noopener noreferrer"
-              >View on Github</a
-            >
+              >View on Github <i class="fa fa-github" aria-hidden="true"></i
+            ></a>
           </div>
         </div>
         <img src="../assets/proj1.jpg" alt="" class="collection-image" />
@@ -62,14 +62,31 @@
         @click="showModal1"
       >
         <div class="collection-content">
-          <h4 class="collection-title">Project 2</h4>
-          <h5 class="collection-subtitle">Description of Project 2</h5>
+          <h4 class="collection-title">QXChange</h4>
+          <h5 class="collection-subtitle">
+            A forums app created for a 24 hr hackathon to help students with
+            homework. Created using the MERN Stack (MongoDB, Express.js, React,
+            Node.js)
+          </h5>
+          <div class="view-button-wrapper">
+            <a
+              class="view-button"
+              href="https://hackru23-gb9a.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Demo
+            </a>
+            <a
+              class="view-button"
+              href="https://github.com/ZhangTerrence/qxchange"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on Github <i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </div>
         </div>
-        <img
-          src="../assets/portfolio-pic-2.jpg"
-          alt=""
-          class="collection-image"
-        />
+        <img src="../assets/qxchange.jpg" alt="" class="collection-image" />
       </a>
 
       <a
@@ -267,6 +284,15 @@ export default {
 a {
   color: inherit;
 }
+
+.fa-link {
+  font-size: 1rem;
+}
+
+.fa-github {
+  font-size: 1rem;
+}
+
 .projects-section {
   background-color: var(--light);
   text-align: center;
@@ -289,7 +315,7 @@ a {
 }
 
 .collection-item {
-  width: 27.5vw;
+  width: 30vw;
   margin: 2rem;
   position: relative;
   transition: all 0.3s;

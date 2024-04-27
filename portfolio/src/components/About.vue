@@ -34,7 +34,14 @@
       <div class="work-container">
         <a class="work-button" href="#skills" v-smooth-scroll>Skills</a>
         <a class="work-button" href="#projects" v-smooth-scroll>Projects</a>
-        <a class="work-button" id="resume" v-smooth-scroll>Resume</a>
+        <a
+          class="work-button"
+          id="resume"
+          v-smooth-scroll
+          href="/portfolio/public/static/Evan_Yang_Resume.pdf"
+          download="Resume.pdf"
+          >Resume <i class="fa fa-download"></i>
+        </a>
       </div>
 
       <div class="about-container-icon">
@@ -95,6 +102,10 @@ export default {
 .about-container-icon {
   display: flex;
   margin-bottom: 3rem;
+}
+
+.fa-download {
+  font-size: 1.25rem;
 }
 
 .fa-linkedin {
@@ -164,6 +175,7 @@ export default {
   background-color: var(--light);
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   border: 0.1em solid #000000;
+  text-align: center;
 }
 
 .work-button {
