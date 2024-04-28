@@ -38,7 +38,7 @@
           class="work-button"
           id="resume"
           v-smooth-scroll
-          href="/portfolio/public/static/Evan_Yang_Resume.pdf"
+          href="./"
           download="Resume.pdf"
           >Resume <i class="fa fa-download"></i>
         </a>
