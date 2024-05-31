@@ -324,7 +324,7 @@ a {
 }
 
 .collection-item {
-  width: 30%;
+  width: 27.5%;
   height: 30rem;
   margin: 2rem;
   position: relative;
