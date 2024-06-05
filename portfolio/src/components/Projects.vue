@@ -57,6 +57,40 @@
       <a
         class="collection-item"
         data-aos="slide-up"
+        data-aos-duration="500"
+        data-aos-once="true"
+        @click="showModal"
+      >
+        <div class="collection-content">
+          <h4 class="collection-title">Inkwell</h4>
+          <h5 class="collection-subtitle">
+            A note taking app made to be simple and efficient. Created using
+            React, Typescript, Tailwind and Firebase
+          </h5>
+          <div class="view-button-wrapper">
+            <a
+              class="view-button"
+              href="https://inkwell1.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Demo
+            </a>
+            <a
+              class="view-button"
+              href="https://github.com/Evany226/Inkwell"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on Github
+            </a>
+          </div>
+        </div>
+        <img src="../assets/inkwell.jpg" alt="" class="collection-image" />
+      </a>
+
+      <a
+        class="collection-item"
+        data-aos="slide-up"
         data-aos-duration="1000"
         data-aos-once="true"
         @click="showModal1"
@@ -114,24 +148,6 @@
           </div>
         </div>
         <img src="../assets/kairos.jpg" alt="" class="collection-image" />
-      </a>
-
-      <a
-        class="collection-item"
-        data-aos="slide-up"
-        data-aos-duration="500"
-        data-aos-once="true"
-        @click="showModal"
-      >
-        <div class="collection-content">
-          <h4 class="collection-title">Project 4</h4>
-          <h5 class="collection-subtitle">Description of Project 4</h5>
-        </div>
-        <img
-          src="../assets/portfolio-pic-4.jpg"
-          alt=""
-          class="collection-image"
-        />
       </a>
 
       <a
