@@ -133,9 +133,9 @@
         <div class="collection-content">
           <h4 class="collection-title">Kairos</h4>
           <h5 class="collection-subtitle">
-            A forums app created for a 24 hr hackathon to help students with
-            homework. Created using the MERN Stack (MongoDB, Express.js, React,
-            Node.js)
+            A job finder app created for a 24 hour hackathon that scrapes job
+            board sites and recommends jobs that are suitable for you. Created
+            using React, Python, BS4 and Selenium
           </h5>
           <div class="view-button-wrapper">
             <a
