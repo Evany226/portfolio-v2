@@ -27,6 +27,40 @@
         @click="showModal1"
       >
         <div class="collection-content">
+          <h4 class="collection-title">Harmony</h4>
+          <h5 class="collection-subtitle">
+            A communication app like Discord with voice and video chat. Created
+            using Next.js, Tailwind, Typescript, Socket.io and Express.js
+          </h5>
+          <div class="view-button-wrapper">
+            <a
+              class="view-button"
+              href="https://team-sync-rho.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Demo
+            </a>
+            <a
+              class="view-button"
+              href="https://github.com/Evany226/harmony"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on Github
+            </a>
+          </div>
+        </div>
+        <img src="../assets/Harmony.png" alt="" class="collection-image" />
+      </a>
+
+      <a
+        class="collection-item"
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        @click="showModal1"
+      >
+        <div class="collection-content">
           <h4 class="collection-title">DragNDrop</h4>
           <h5 class="collection-subtitle">
             A project management application to help organize your workflow and
@@ -346,6 +380,7 @@ a {
   position: relative;
   transition: all 0.3s;
   overflow: hidden;
+  background-color: black;
 }
 
 .collection-content {
@@ -390,7 +425,7 @@ a {
 .collection-image {
   filter: brightness(40%);
   width: 100%;
-  height: 100%;
+  height: 78%;
   transition: all 0.3s;
 }
 </style>
